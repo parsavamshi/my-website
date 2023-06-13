@@ -1,0 +1,481 @@
+<section style="margin-top: 20px;">
+	<div id="EmailSection" class="d-flex align-items-center" uk-height-viewport="offset-top: true"
+	style="min-height: calc(86vh);">
+	<div class="container">
+	   <h1 class="heading text-center mb-5 position-relative">Give Us Feedback</h1>
+	   <div class="row" id="mail-us">
+		  <div class="col-sm-3 hidden-xs">
+			 <div class="nav flex-column nav-pills nav-fill contact-us-tabs mb-3" id="v-pills-tab" role="tablist"
+				aria-orientation="vertical">
+				<a class="nav-link" id="feed-on-info-list" data-toggle="pill"  role="tab" [ngClass]="{'active': tabName === 'feedback'}"
+				   aria-controls="FeedbackOnInfo" aria-selected="true" (click)="gettabClick('feedback')">Feedback on SmartAgents APP Accessibility</a>
+				<a class="nav-link " id="feed-on-staff-list" data-toggle="pill"  role="tab"   [ngClass]="{'active': tabName === 'products'}"
+				   aria-controls="FeedbackOnStaff"  (click)="gettabClick('products')">Feedback on SmartAgents Products</a>
+				<a class="nav-link" id="online-services-list" data-toggle="pill"  role="tab" [ngClass]="{'active': tabName === 'webAccess'}"
+				   aria-controls="OnlineServices"  (click)="gettabClick('webAccess')">Issues with Web Access</a>
+				<a class="nav-link" id="new-tie-up-list" data-toggle="pill" role="tab" [ngClass]="{'active': tabName === 'dealer'}"
+				   aria-controls="NewTieUp"  (click)="gettabClick('dealer')">Dealer Feedback</a>
+				<a class="nav-link" id="suggestions-on-ui-list" data-toggle="pill" [ngClass]="{'active': tabName === 'suggestions'}"
+				   role="tab" aria-controls="SuggestionsOnUI"  (click)="gettabClick('suggestions')">Suggestions on User Interface?</a>
+				<a class="nav-link" id="other-issue-list" data-toggle="pill" role="tab"  [ngClass]="{'active': tabName === 'other'}"
+				   aria-controls="OtherIssue" (click)="gettabClick('other')">Any Other Issue</a>
+			 </div>
+		  </div>
+
+
+		  <div class="col-sm-9">
+				<div *ngIf="tabName === 'feedback'" class="show active">
+					  <h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on SmartAgents APP Accessibility</h4>
+					  <p class="text-muted">Your feedback will help us improve</p>
+					  <form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+						 <div class="uk-width-1-1 uk-first-column">
+							<input class="form-control" type="text" placeholder="Name*">
+						 </div>
+						 <div class="uk-width-1-1 uk-grid-margin uk-first-column">
+							<div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid="">
+							   <div class="uk-width-auto uk-first-column p-0">
+								  <select class="form-select form-select-lg " aria-label="form-select-lg example">
+									  <option selected="" disabled="">+91</option>
+									  <option>+92</option>
+									  <option>+93</option>
+									  <option>+94</option>
+									</select>
+							   </div>
+							   <div>
+								  <input class="form-control" type="text" placeholder="Phone Number*">
+							   </div>
+							   <div class="email">
+								  <input class="form-control" type="text" placeholder="Email ID">
+							   </div>
+							</div>
+						 </div>
+						 <div class="uk-width-1-3 uk-grid-margin uk-first-column">
+							<select class="form-control">
+							   <option selected="" disabled="">Country</option>
+							   <option>Option 02</option>
+							</select>
+						 </div>
+						 <div class="uk-width-1-3 uk-grid-margin uk-first-column">
+							<select class="form-control">
+							   <option selected="">State</option>
+							   <option>Option 02</option>
+							</select>
+						 </div>
+						 <div class="uk-width-1-3 uk-grid-margin uk-first-column">
+							<select class="form-control">
+							   <option>City</option>
+							   <option>Option 02</option>
+							</select>
+						 </div>
+						 <div class="uk-grid-margin uk-first-column">
+							<select class="form-control">
+							   <option selected="" disabled="">Category</option>
+							   <option>Option 02</option>
+							</select>
+						 </div>
+						 <!-- <div class="uk-grid-margin uk-first-column">
+							<select class="form-control">
+							   <option selected="">Priority</option>
+							   <option>Option 02</option>
+							</select>
+						 </div> -->
+						 <div class="uk-width-1-1 uk-grid-margin uk-first-column">
+							<div class="form-group">
+							   <textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+							</div>
+						 </div>
+						 <div class="uk-width-1-1 mt-4 uk-grid-margin uk-first-column     ">
+							<div class=" uk-flex-center uk-flex-middle uk-flex-between align-items-center justify-content-between d-flex mb-5 mt-2" uk-grid="">
+							   <div class="uk-first-column">
+								  <label><input class="uk-checkbox" type="checkbox" checked=""> I agree <a href="#">Terms and Conditions</a></label>
+							   </div>
+							   <div class="text-center">
+								  <img src="assets/img/newCaptchaAnchor.gif" alt="" uk-img="" width="200">
+							   </div>
+							   <div class="text-right">
+								  <button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+							   </div>
+							</div>
+						 </div>
+					  </form>
+				</div>
+				<div *ngIf="tabName === 'products'">
+				  <h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on SmartAgents Products</h4>
+				  <p class="text-muted">Your feedback will help us improve</p>
+				  <form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+					<div class="uk-width-1-1 uk-first-column">
+					   <input class="form-control" type="text" placeholder="Name*">
+					</div>
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid="">
+						  <div class="uk-width-auto uk-first-column p-0">
+							 <select class="form-select form-select-lg " aria-label="form-select-lg example">
+								 <option selected="" disabled="">+91</option>
+								 <option>+92</option>
+								 <option>+93</option>
+								 <option>+94</option>
+							   </select>
+						  </div>
+						  <div>
+							 <input class="form-control" type="text" placeholder="Phone Number*">
+						  </div>
+						  <div class="email">
+							 <input class="form-control" type="text" placeholder="Email ID">
+						  </div>
+					   </div>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Country</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">State</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option>City</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Category</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<!-- <div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">Priority</option>
+						  <option>Option 02</option>
+					   </select>
+					</div> -->
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="form-group">
+						  <textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+					   </div>
+					</div>
+					<div class="uk-width-1-1 mt-4 uk-grid-margin uk-first-column">
+						<div class=" uk-flex-center uk-flex-middle uk-flex-between align-items-center justify-content-between d-flex mb-5 mt-2" uk-grid="">
+							<div class="uk-first-column">
+							   <label><input class="uk-checkbox" type="checkbox" checked=""> I agree <a href="#">Terms and Conditions</a></label>
+							</div>
+							<div class="text-center">
+							   <img src="assets/img/newCaptchaAnchor.gif" alt="" uk-img="" width="200">
+							</div>
+							<div class="text-right">
+							   <button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+							</div>
+						 </div>
+					</div>
+				 </form>
+				</div>
+				<div *ngIf="tabName === 'webAccess'">
+				  <h4 class="fweight-400 border-bottom pb-2 mb-3">Issues with Web Access</h4>
+				  <p class="text-muted">Your feedback will help us improve</p>
+				  <form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+					<div class="uk-width-1-1 uk-first-column">
+					   <input class="form-control" type="text" placeholder="Name*">
+					</div>
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid="">
+						  <div class="uk-width-auto uk-first-column p-0">
+							 <select class="form-select form-select-lg " aria-label="form-select-lg example">
+								 <option selected="" disabled="">+91</option>
+								 <option>+92</option>
+								 <option>+93</option>
+								 <option>+94</option>
+							   </select>
+						  </div>
+						  <div>
+							 <input class="form-control" type="text" placeholder="Phone Number*">
+						  </div>
+						  <div class="email">
+							 <input class="form-control" type="text" placeholder="Email ID">
+						  </div>
+					   </div>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Country</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">State</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option>City</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Category</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<!-- <div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">Priority</option>
+						  <option>Option 02</option>
+					   </select>
+					</div> -->
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="form-group">
+						  <textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+					   </div>
+					</div>
+					<div class="uk-width-1-1 mt-4 uk-grid-margin uk-first-column">
+						<div class=" uk-flex-center uk-flex-middle uk-flex-between align-items-center justify-content-between d-flex mb-5 mt-2" uk-grid="">
+							<div class="uk-first-column">
+							   <label><input class="uk-checkbox" type="checkbox" checked=""> I agree <a href="#">Terms and Conditions</a></label>
+							</div>
+							<div class="text-center">
+							   <img src="assets/img/newCaptchaAnchor.gif" alt="" uk-img="" width="200">
+							</div>
+							<div class="text-right">
+							   <button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+							</div>
+						 </div>
+					</div>
+				 </form>
+				</div>
+				<div *ngIf="tabName === 'dealer'">
+				  <h4 class="fweight-400 border-bottom pb-2 mb-3">Dealer Feedback</h4>
+				  <p class="text-muted">We are Happy to associate with you for Growing Together</p>
+				  <form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+					<div class="uk-width-1-1 uk-first-column">
+					   <input class="form-control" type="text" placeholder="Name*">
+					</div>
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid="">
+						  <div class="uk-width-auto uk-first-column p-0">
+							 <select class="form-select form-select-lg " aria-label="form-select-lg example">
+								 <option selected="" disabled="">+91</option>
+								 <option>+92</option>
+								 <option>+93</option>
+								 <option>+94</option>
+							   </select>
+						  </div>
+						  <div>
+							 <input class="form-control" type="text" placeholder="Phone Number*">
+						  </div>
+						  <div class="email">
+							 <input class="form-control" type="text" placeholder="Email ID">
+						  </div>
+					   </div>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Country</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">State</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option>City</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Category</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<!-- <div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">Priority</option>
+						  <option>Option 02</option>
+					   </select>
+					</div> -->
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="form-group">
+						  <textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+					   </div>
+					</div>
+					<div class="uk-width-1-1 mt-4 uk-grid-margin uk-first-column">
+						<div class=" uk-flex-center uk-flex-middle uk-flex-between align-items-center justify-content-between d-flex mb-5 mt-2" uk-grid="">
+							<div class="uk-first-column">
+							   <label><input class="uk-checkbox" type="checkbox" checked=""> I agree <a href="#">Terms and Conditions</a></label>
+							</div>
+							<div class="text-center">
+							   <img src="assets/img/newCaptchaAnchor.gif" alt="" uk-img="" width="200">
+							</div>
+							<div class="text-right">
+							   <button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+							</div>
+						 </div>
+					</div>
+				 </form>
+				</div>
+				<div *ngIf="tabName === 'suggestions'">
+				  <h4 class="fweight-400 border-bottom pb-2 mb-3">Suggestions on User Interface?</h4>
+				  <p class="text-muted">Your feedback will help us improve</p>
+				  <form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+					<div class="uk-width-1-1 uk-first-column">
+					   <input class="form-control" type="text" placeholder="Name*">
+					</div>
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid="">
+						  <div class="uk-width-auto uk-first-column p-0">
+							 <select class="form-select form-select-lg " aria-label="form-select-lg example">
+								 <option selected="" disabled="">+91</option>
+								 <option>+92</option>
+								 <option>+93</option>
+								 <option>+94</option>
+							   </select>
+						  </div>
+						  <div>
+							 <input class="form-control" type="text" placeholder="Phone Number*">
+						  </div>
+						  <div class="email">
+							 <input class="form-control" type="text" placeholder="Email ID">
+						  </div>
+					   </div>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Country</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">State</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option>City</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Category</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<!-- <div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">Priority</option>
+						  <option>Option 02</option>
+					   </select>
+					</div> -->
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="form-group">
+						  <textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+					   </div>
+					</div>
+					<div class="uk-width-1-1 mt-4 uk-grid-margin uk-first-column">
+						<div class=" uk-flex-center uk-flex-middle uk-flex-between align-items-center justify-content-between d-flex mb-5 mt-2" uk-grid="">
+							<div class="uk-first-column">
+							   <label><input class="uk-checkbox" type="checkbox" checked=""> I agree <a href="#">Terms and Conditions</a></label>
+							</div>
+							<div class="text-center">
+							   <img src="assets/img/newCaptchaAnchor.gif" alt="" uk-img="" width="200">
+							</div>
+							<div class="text-right">
+							   <button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+							</div>
+						 </div>
+					</div>
+				 </form>
+				</div>
+				<div *ngIf="tabName === 'other'">
+				  <h4 class="fweight-400 border-bottom pb-2 mb-3">Any other issue? </h4>
+				  <p class="text-muted">Your feedback will help us improve</p>
+				  <form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+					<div class="uk-width-1-1 uk-first-column">
+					   <input class="form-control" type="text" placeholder="Name*">
+					</div>
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid="">
+						  <div class="uk-width-auto uk-first-column p-0">
+							 <select class="form-select form-select-lg " aria-label="form-select-lg example">
+								 <option selected="" disabled="">+91</option>
+								 <option>+92</option>
+								 <option>+93</option>
+								 <option>+94</option>
+							   </select>
+						  </div>
+						  <div>
+							 <input class="form-control" type="text" placeholder="Phone Number*">
+						  </div>
+						  <div class="email">
+							 <input class="form-control" type="text" placeholder="Email ID">
+						  </div>
+					   </div>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Country</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">State</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-width-1-3 uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option>City</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="" disabled="">Category</option>
+						  <option>Option 02</option>
+					   </select>
+					</div>
+					<!-- <div class="uk-grid-margin uk-first-column">
+					   <select class="form-control">
+						  <option selected="">Priority</option>
+						  <option>Option 02</option>
+					   </select>
+					</div> -->
+					<div class="uk-width-1-1 uk-grid-margin uk-first-column">
+					   <div class="form-group">
+						  <textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+					   </div>
+					</div>
+					<div class="uk-width-1-1 mt-4 uk-grid-margin uk-first-column">
+						<div class=" uk-flex-center uk-flex-middle uk-flex-between align-items-center justify-content-between d-flex mb-5 mt-2" uk-grid="">
+							<div class="uk-first-column">
+							   <label><input class="uk-checkbox" type="checkbox" checked=""> I agree <a href="#">Terms and Conditions</a></label>
+							</div>
+							<div class="text-center">
+							   <img src="assets/img/newCaptchaAnchor.gif" alt="" uk-img="" width="200">
+							</div>
+							<div class="text-right">
+							   <button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+							</div>
+						 </div>
+					</div>
+				 </form>
+				</div>
+		  </div>
+	   </div>
+	</div>
+ </div>
+</section>

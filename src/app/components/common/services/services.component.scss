@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: deepskyblue;
+    text-decoration: underline;
+    // border-bottom: 2px solid deepskyblue;
+    // background-color: #0071BC;
+}
+
+.services{
+    background-image: url(../../../../assets/img/services.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-item{
+    height: 900px;
+    width: 100%;
+   
+}
+
+
+
+@media (min-width:320px) and (max-width:780px){
+    
+    .services{
+        background-size: cover;
+    }
+    .services-item{
+        height: 100%;
+        width: 100%;
+    }
+    }
+    
+    @media (min-width:600px) and (max-width:900px){
+        .services-item{
+            height: 500px;
+            width: 100%;
+        }
+    }
+    
+    @media (min-width:901px) and (max-width:1040px){
+        .services-item{
+            height: 700px;
+            width: 100%;
+        }
+    }

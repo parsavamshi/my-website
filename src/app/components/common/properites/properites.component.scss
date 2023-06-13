@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    color: deepskyblue;
+    // border-bottom: 2px solid deepskyblue;
+    text-decoration: underline;
+    // background-color: #0071BC;
+}
+.properites{
+    background-image: url(../../../../assets/img/projects.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.properites-item{
+    height: 900px;
+    width: 100%;
+}
+
+
+
+@media (min-width:320px) and (max-width:780px){
+    
+    .properites{
+        background-size: cover;
+    }
+    .properites-item{
+        height: 100%;
+        width: 100%;
+    }
+    }
+    
+    @media (min-width:600px) and (max-width:900px){
+        .properites-item{
+            height: 500px;
+            width: 100%;
+        }
+    }
+    
+    @media (min-width:901px) and (max-width:1040px){
+        .properites-item{
+            height: 700px;
+            width: 100%;
+        }
+    }

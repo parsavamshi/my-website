@@ -1,0 +1,683 @@
+<section class="container">
+    <div class="row top-section mt-2 mb-3">
+        <div  class="col-2 border-left border-right">
+             <nav id="pagenav" class=" pt-2">
+				<ul class="uk-nav uk-nav-default tablist" uk-scrollspy-nav="closest: li; scroll: true; offset: 56">
+					<li><a href="" routerLink="/open-lands">About</a></li>
+					<li><a href="" routerLink="/open-lands">Project Highlights</a></li>
+					<li><a href="" routerLink="/open-lands">Gallery</a></li>
+					<li><a href="" routerLink="/open-lands">Location Advantage</a></li>
+					<li><a href="" routerLink="/open-lands">Download</a></li>
+					<li><a href="" routerLink="/open-lands">Legal verification</a></li>
+					<li><a href="" routerLink="/open-lands">About Developer</a></li>
+					<li><a href="" routerLink="/open-lands" >Price Trends</a></li>
+					<li><a href="" routerLink="/open-lands" >Documention Support</a></li>
+                    <li class = "back-btn"><span routerLink="/open-lands" class="twp-read-more text"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span></li>
+				</ul>
+				
+			</nav>
+        </div>
+        <div  *ngIf="tabName === 'link1'" class="show active col-10">
+            <div class="row mt-2  "  >
+                <div class="col-8 ">
+                    <div class="sideimg h-100">
+                        <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100">
+                            <div class="carousel-item h-100 active">
+                                <img src="../../../../assets/img/openlands/big-img/open-lands2.png" class="d-block w-100 h-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="../../../../assets/img/openlands/big-img/open-lands2.png" class="d-block w-100 h-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="../../../../assets/img/openlands/big-img/open-lands3.png" class="d-block w-100 h-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="">
+                        <h3 class="poperty-title" >Interested in this Property ?</h3>
+                    </div>
+                    <div class="nav justify-content-between">
+                        <a  class="Seller-Details"> Get  Seller Details</a>
+                        <a  class="Loan-options">Get Loan options</a>
+                        <a  class="seller-icon1" data-bs-toggle="tooltip" data-bs-placement="top" title="Favourites">
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="heart"><path fill="none" stroke="#000" stroke-width="1.03" d="M10,4 C10,4 8.1,2 5.74,2 C3.38,2 1,3.55 1,6.73 C1,8.84 2.67,10.44 2.67,10.44 L10,18 L17.33,10.44 C17.33,10.44 19,8.84 19,6.73 C19,3.55 16.62,2 14.26,2 C11.9,2 10,4 10,4 L10,4 Z"></path></svg></a>
+                            <a  class="seller-icon2" data-bs-toggle="tooltip" data-bs-placement="top" title="Share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            
+                    </div> -->
+                </div>
+                <div class="col-4 ps-0">
+                    <!-- <div class="">
+                        <h2>3 Storey Building</h2>
+                        <p class="updatedlocation"> Hyderabad, Telangana, Updated: 25 Feb 2021</p>
+                        <h3 class="pricing">Selling Price @ ₹ xxxxxx</h3>
+                        <div class="d-flex types">
+                            <div class="col">
+                                <p><i class="fa fa-building" aria-hidden="true"></i>Type: Finished</p>
+                                <p> <i class="fa fa-location-arrow" aria-hidden="true"></i>Manikonda</p>
+                                <p><i class="fa fa-building" aria-hidden="true"></i>Type: Finished</p>
+                                <p> <i class="fa fa-location-arrow" aria-hidden="true"></i>Manikonda</p>
+                            </div>
+                            <div class="col">
+                                <p> <i class="fa fa-map-marker" aria-hidden="true"></i> Location Map:</p>
+                                <p> <i class="fa fa-area-chart" aria-hidden="true"></i>Area: xx Sq.Yrds</p>
+                                <p><i class="fa fa-building" aria-hidden="true"></i>Type: Finished</p>
+                                <p> <i class="fa fa-location-arrow" aria-hidden="true"></i>Manikonda</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                    
+                        <div class = "nav align-items-center mb-4 justify-content-between">
+                            <button class="btn Schedule">Schedule Visit</button>
+                            <button class="btn Email Schedule">Email verified</button>
+                            <button class="btn Mobile Schedule">Mobile verified</button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="description"><b>Description:</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor perferendis </p>
+                    </div> -->
+                <h4 class="text-center mb-3 mt-2 " >Contact Owner </h4>
+
+                    <form action="" method="post">
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mobile">
+                          </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                          </div>
+                          <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                          </div>
+                       
+                        <div class="  g-recaptcha   d-flex justify-content-between mb-3" >
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        I'm not a robot
+                                      </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="../../../../assets/img/smartagents/logo.png" alt="" style="width:30px; height:30px">
+                                <div class="captcha" >reCAPTCHA</div>
+                                <!-- <div>privacy - Terms</div> -->
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit" class="fb9" />
+                      </form>
+                </div>
+              
+                    <!-- <div class="col-12">
+                        <div class="nav justify-content-between">
+                            <h3>Buyer  Guidelines</h3>
+                            <a > Know more</a>
+                        </div>
+                        <hr>
+    
+                        <div class="row Buyer-Guidelines">
+                            <div class="col ">
+                                <a >Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                                <a >aliquid voluptatem repudiandae magni aperiam quis</a>
+                            </div>
+                            <div class="col">
+                                <a >Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                <a >aliquid voluptatem repudiandae magni aperiam quis ullam</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+              
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <div class="row mb-4 property-details">
+        <div class="col-6">
+            <span class="property-title1" >Property Type:  3 Storey Building </span>
+        </div>
+        <div class="col-6">
+            <span class="location-title">location: Manikonda</span>
+        </div>
+        <div class="col-6">
+            <span class="Area-title">Area: 1,41,500 Sq/yerds</span>
+        </div>
+        <div class="col-6">
+            <span class="Price-title" >Price: 7.5 Cr</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>Similar Properties</h2>
+            <hr>
+            <div class="row">
+                <div class="col-9">
+                    <div class="tabset why-we-different-tabset">
+                        <!-- Tab 1 -->
+                        <input type="radio" name="tabset" id="tab1" aria-controls="speed-flexibility" checked>
+                        <label for="tab1">Agents</label>
+                        <!-- Tab 2 -->
+                        <input type="radio" name="tabset" id="tab2" aria-controls="profeesional-work">
+                        <label for="tab2">Builders</label>
+                        <div class="tab-panels">
+                            <div id="speed-flexibility" class="tab-panel">
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="meal-list">
+                                    <li *ngFor="let meal of meals | paginate: { itemsPerPage: 10, currentPage: page }">
+                                        {{ meal }}
+                                    </li>
+                                </ul>
+                                <div class="has-text-centered">
+                                    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+                                </div>
+                            </div>
+                            <div id="profeesional-work" class="tab-panel">
+                                <div class="row align-items-center border cart mb-3">
+                                    <div class="col-12">
+                                        <div class="row align-items-center cart1 ">
+                                            <div class="col-4 p-3 pe-0 cartimg " >
+                                                <div>
+                                                    <img src="../../../../assets/img/openlands/open-lands2.png" alt="" class="img1 w-100" routerLink="/open-lands-inner"  (click)="scrollToTop()">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 cart-details">
+                                                <div class="row mb-1  justify-content-between">
+                                                    <div class="col-8">
+                                                        <a routerLink="/open-lands-inner"  (click)="scrollToTop()">3 Storey Building for Sale in Manikonda</a>
+                                                        <div class="location-title">Location: Manikonda</div>
+                                                        <div class="location-title">Availabiity: immediate</div>
+                                                        <div class="location-title">Property-Age: New Construction </div>
+                                                    </div>
+                                                    <div class="col-4 ps-0 ">
+                                                        <div class="Price-title" >Price: 7.5 Cr</div>
+                                                        <div class="Area-title">Area: 1,41,500 Sq/yerds</div>
+                                                        <div class="Area-title">Floor Units: 1</div>
+                                                        <div class="Area-title">Facing: East</div>
+                                                    </div>
+                                                </div>
+                                                <div class="nav align-items-center justify-content-between">
+                                                    <div class="col-8">
+                                                        <button class="btn wts-up-btn">
+                                                             <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none"><g  filter="url(#filter0_d_35_1571)"><path  d="M10.4004 20.9828L10.7963 21.1808C12.4462 22.1706 14.2939 22.6326 16.1417 22.6326C21.9488 22.6326 26.7001 17.8813 26.7001 12.0741C26.7001 9.30254 25.5783 6.59691 23.5986 4.61717C21.6189 2.63742 18.9792 1.51562 16.1417 1.51562C10.3345 1.51562 5.58309 6.26694 5.64912 12.1401C5.64912 14.1198 6.24303 16.0336 7.23286 17.6833L7.4968 18.0793L6.44103 21.9727L10.4004 20.9828Z" fill="#00E676"></path><path  d="M24.7211 3.56348C22.4774 1.25386 19.3758 0 16.2083 0C9.47729 0 4.06603 5.4772 4.13197 12.1422C4.13197 14.2539 4.72588 16.2997 5.7158 18.1474L4 24.4165L10.4011 22.7667C12.1828 23.7567 14.1625 24.2186 16.1423 24.2186C22.8073 24.2186 28.2186 18.7413 28.2186 12.0764C28.2186 8.84277 26.9647 5.80717 24.7211 3.56348H24.7211ZM16.2083 22.1729C14.4265 22.1729 12.6448 21.7111 11.127 20.7872L10.7311 20.5892L6.90363 21.579L7.89346 17.8176L7.62952 17.4216C4.72588 12.7363 6.11172 6.53305 10.863 3.62942C15.6143 0.725884 21.7515 2.11171 24.6551 6.86303C27.5587 11.6143 26.1728 17.7515 21.4216 20.6551C19.9037 21.6449 18.056 22.1728 16.2083 22.1728V22.1729ZM22.0154 14.848L21.2895 14.5181C21.2895 14.5181 20.2338 14.0561 19.5738 13.7261C19.5078 13.7261 19.4419 13.6601 19.3758 13.6601C19.1778 13.6601 19.0459 13.7261 18.9139 13.7922C18.9139 13.7922 18.8479 13.8581 17.9241 14.914C17.858 15.0459 17.7261 15.112 17.5941 15.112H17.5281C17.4621 15.112 17.3301 15.0459 17.2641 14.98L16.9341 14.848C16.2083 14.5181 15.5484 14.1221 15.0204 13.5942C14.8885 13.4622 14.6905 13.3302 14.5585 13.1983C14.0965 12.7363 13.6346 12.2083 13.3047 11.6144L13.2387 11.4825C13.1727 11.4164 13.1727 11.3505 13.1067 11.2185C13.1067 11.0866 13.1067 10.9546 13.1727 10.8885C13.1727 10.8885 13.4367 10.5586 13.6346 10.3607C13.7667 10.2286 13.8326 10.0307 13.9646 9.89872C14.0965 9.70072 14.1626 9.43678 14.0965 9.23878C14.0306 8.9088 13.2387 7.12706 13.0408 6.73115C12.9087 6.53315 12.7768 6.46721 12.5788 6.40118H11.8529C11.7209 6.40118 11.589 6.46721 11.4569 6.46721L11.3909 6.53315C11.2589 6.59918 11.127 6.73115 10.995 6.79709C10.863 6.92915 10.797 7.06103 10.665 7.19309C10.2031 7.78701 9.93914 8.51289 9.93914 9.23878C9.93914 9.76666 10.0711 10.2946 10.2691 10.7566L10.3351 10.9546C10.9291 12.2083 11.7209 13.3302 12.7768 14.3201L13.0408 14.584C13.2387 14.782 13.4367 14.914 13.5687 15.1119C14.9545 16.2998 16.5382 17.1577 18.32 17.6196C18.518 17.6855 18.7819 17.6855 18.9799 17.7516H19.6398C19.9697 17.7516 20.3657 17.6196 20.6297 17.4876C20.8276 17.3557 20.9596 17.3557 21.0915 17.2237L21.2236 17.0916C21.3556 16.9597 21.4875 16.8937 21.6195 16.7617C21.7515 16.6298 21.8835 16.4978 21.9495 16.3657C22.0815 16.1018 22.1474 15.7718 22.2134 15.442V14.98C22.2134 14.98 22.1474 14.914 22.0154 14.848Z" fill="white"></path></g><defs ><filter  id="filter0_d_35_1571" x="0" y="0" width="32.2188" height="32.4141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_35_1571"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_35_1571" result="shape"></feBlend></filter></defs></svg>
+                                                           <span> Whatsapp</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn enqurie-btn">
+                                                            <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 22 28" fill="none"><g  filter="url(#filter0_d_37_334)"><path  d="M6.36324 0.438818L7.43926 0.0948116C8.44828 -0.227194 9.5263 0.293815 9.95831 1.31183L10.8183 3.33987C11.1923 4.22289 10.9843 5.26191 10.3043 5.90792L8.40928 7.70596C8.52628 8.78198 8.88829 9.841 9.4943 10.883C10.0698 11.8912 10.8417 12.7736 11.7643 13.4781L14.0404 12.7181C14.9024 12.431 15.8424 12.762 16.3704 13.5391L17.6035 15.3491C18.2185 16.2531 18.1075 17.4991 17.3444 18.2652L16.5274 19.0862C15.7134 19.9032 14.5504 20.2002 13.4754 19.8642C10.9353 19.0722 8.60228 16.7211 6.47224 12.8111C4.3392 8.89498 3.58619 5.57091 4.2142 2.84286C4.4782 1.69484 5.29522 0.779824 6.36324 0.438818Z" fill="#515151"></path></g><defs ><filter  id="filter0_d_37_334" x="0" y="0" width="22" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood  flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix  in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset  dy="4"></feOffset><feGaussianBlur  stdDeviation="2"></feGaussianBlur><feComposite  in2="hardAlpha" operator="out"></feComposite><feColorMatrix  type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend  mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_334"></feBlend><feBlend  mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_334" result="shape"></feBlend></filter></defs></svg>
+                                                            <span>Enqurie Now</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ab pariatur ipsum doloribu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="meal-list">
+                                    <li *ngFor="let meal of meals | paginate: { itemsPerPage: 10, currentPage: page }">
+                                        {{ meal }}
+                                    </li>
+                                </ul>
+                                <div class="has-text-centered">
+                                    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col">
+                            <img src="../../../../assets/img/openlands/1.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../../../assets/img/openlands/2.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../../../assets/img/openlands/3.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+   </div>
+</section>

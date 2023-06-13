@@ -1,0 +1,215 @@
+// h1{
+//     text-align: center;
+//     color: #fff;
+//     border-bottom: 2px solid #fff;
+//     // background-color: #0071BC;
+// }
+
+.loginform{
+    height: 90vh;
+    background: #f0f8ff !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.card{
+    overflow: hidden;
+    border: 0 !important;
+    // border-radius: 20px !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .img-left{
+    width: 45%;
+    background: url('../../../../assets/img/login/sellers-login.svg') center;
+    background-size: cover;
+  }
+  
+  .card-body{
+    padding: 2rem;
+  }
+  
+  .title{
+    margin-bottom: 2rem;
+  }
+  
+  .form-input{
+    position: relative;
+  }
+  
+  .form-input input{
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+  }
+  
+  .form-input span{
+    position: absolute;
+    top: 10px;
+    padding-left: 15px;
+    color: #007bff;
+  }
+  
+  .form-input input::placeholder{
+    color: black;
+    padding-left: 0px;
+  }
+  
+  .form-input input:focus, .form-input input:valid{
+    border: 2px solid #007bff;
+  }
+  
+  .form-input input:focus::placeholder{
+    color: #454b69;
+  }
+  
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #007bff !important;
+    border: 0px;
+  }
+  
+  .form-box button[type="submit"]{
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #007bff;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    transition: 0.5s;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .form-box button[type="submit"]:hover{
+    background: #0069d9;
+
+  }
+  
+  .forget-link, .register-link{
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .forget-link:hover, .register-link:hover{
+    color: #0069d9;
+    text-decoration: none;
+  }
+  
+  .form-box .btn-social{
+    color: white !important;
+    border: 0;
+    font-weight: bold;
+  }
+  
+  .form-box .btn-facebook{
+    background: #4866a8;
+  }
+  
+  .form-box .btn-google{
+    background: #da3f34;
+  }
+  
+  .form-box .btn-twitter{
+    background: #33ccff;
+  }
+  
+  .form-box .btn-facebook:hover{
+    background: #3d578f;
+  }
+  
+  .form-box .btn-google:hover{
+    background: #bf3b31;
+  }
+  
+  .form-box .btn-twitter:hover{
+    background: #2eb7e5;
+  }
+  
+  
+  @media (min-width:320px) and (max-width:780px){
+    .btn-social{
+      font-size: 12px !important;
+      padding: 9px 7px !important;
+    }
+    .card-body{
+      padding: 1rem;
+    }
+  }
+
+
+  @media (min-width:1024px) and (max-width:1440px){
+    .loginform{
+      height: 90vh;
+      .title{
+        margin: 8px 0;
+        font-size: 14px;
+      }
+      .form-input input{
+        font-size: 13px;
+        height: 35px;
+    padding-left: 40px;
+      }
+    }
+    app-login-navbar{
+      padding: 5px;
+      width: 100vh;
+    }
+    .card-body{
+      padding: 0rem;
+    }
+    .img-left{
+      width: 40%;
+    }
+  
+    .card{
+      width: 100vh;
+    }
+    .form-input span{
+      top: 5px;
+    }
+    label{
+      font-size: 12px;
+    }
+    .form-box button[type=submit]{
+      margin: 0;
+      height: 35px;
+      font-size: 60%;
+    }
+    .forget-link{
+      font-size: 12px;
+    }
+    .text-center{
+      font-size: 12px;
+      margin: 5px 0;
+    }
+    .form-box{
+      .btn-facebook{
+      font-size: 12px !important;
+
+      }
+      .btn-google{
+        font-size: 12px !important;
+      }
+      .btn-twitter{
+        font-size: 12px !important;
+      }
+    }
+    hr{
+      margin: 0 !important;
+    }
+  }

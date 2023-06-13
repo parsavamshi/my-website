@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: deepskyblue;
+    // border-bottom: 2px solid deepskyblue;
+    text-decoration: underline;
+    // text-decoration-color: center;
+    // background-color: #0071BC;
+}
+
+.agents{
+    background-image: url(../../../../assets/img/smart-base.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.agents-item{
+    height: 900px;
+    width: 100%;
+}
+
+
+@media (min-width:320px) and (max-width:780px){
+    
+    .agents{
+        background-size: cover;
+    }
+    .agents-item{
+        height: 100%;
+        width: 100%;
+    }
+  
+    }
+    
+    @media (min-width:600px) and (max-width:900px){
+        .agents-item{
+            height: 500px;
+            width: 100%;
+        }
+    }
+    
+    @media (min-width:901px) and (max-width:1040px){
+        .agents-item{
+            height: 700px;
+            width: 100%;
+        }
+    }

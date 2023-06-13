@@ -1,0 +1,509 @@
+.openlands-banner{
+    background-image: url(../../../../assets/img/test.png);
+    height: 45vh;
+    // background-position: center;
+    background-size: cover;
+}
+.cart{
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 24%), 0 1px 4px 0 rgb(0 0 0 / 12%);
+    transition: box-shadow .3s ease;
+    padding-left: 10px;
+}
+.green-titel{
+    border: 1px solid green;
+    color: green;
+    font-size: 12px;
+    border-radius: 5px;
+    padding:2px 5px
+}
+.bi-heart{
+    font-size: 15px;
+    margin: 5px  10px 0;
+    &:hover{
+        color: red;
+    }
+}
+.three-dots{
+    span{
+        width: 3px;
+        height: 3px;
+        background-color: gainsboro;
+        display: block;
+        margin: 5px;
+    }
+    &:hover{
+        background-color: grey;
+    }
+}
+.Building-title{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+    color: #303030;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.descripation{
+    font-size: 13px;
+    color: #303030;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    margin: 0;
+}
+.col-4{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.cart-price{
+    background-color: #f5f5f5;
+    padding: 10px;
+    a{
+        font-size: 13px;
+        color: #303030;
+        text-decoration: none;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.cart-price-font{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    // svg{
+    //     display: block;
+    //     margin: 5px;
+    // }
+}
+
+.cart-price-font2{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.contact-btn{
+       padding: 5px 5px;
+    background-color: #0562c8;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    &:hover{
+        background: transparent;
+        border: 1px solid #0562c8;
+        color: #0562c8;
+    }
+}
+.get-phone-number-btn{
+       padding: 5px 5px;
+    background: transparent;
+    border: 1px solid #0562c8;
+    border-radius: 10px;
+    color: #0562c8;
+    font-size: 14px;
+    width: 100%;
+
+    &:hover{
+        background: #0562c8;
+        color: #fff;
+    }
+}
+.col-lg-3{
+    .row{
+        flex-direction: column;
+        .col{
+            img{
+                margin: 0 10px 10px;
+            }
+        }
+    }
+}
+.col-8{
+    .row{
+        a{
+            font-weight: bold;
+            padding-bottom: 10px;
+            display: block;
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        div{
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    
+    }
+}
+// .col-12 {
+//     padding: 0;
+// }
+.wts-up-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    // padding: 10px 5px;
+    padding-right: 20px;
+}
+.enqurie-btn{
+    background-color: #fbb900;
+    color: #fff;
+    // padding: 10px 20px ;
+    // i{
+    //     color: #2c2d2e;
+    //     margin: 3px;
+    // }
+    svg{
+        margin-right: 10px;
+    }
+}
+/*==============================
+Why We Are Different CSS
+==============================*/
+.why-we-different-tabset {
+    &.tabset {
+        input[type="radio"] {
+            display: none;
+        }
+        .tab-panel {
+            display: none;
+        }
+        input {
+            &:first-child:checked ~ .tab-panels {
+                .tab-panel {
+                    &:first-child {
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(3):checked ~ .tab-panels {
+                .tab-panel {
+                    &:nth-child(2) {
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(5):checked ~ .tab-panels {
+                .tab-panel {
+                    &:nth-child(3) {
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(7):checked ~ .tab-panels {
+                .tab-panel {
+                    &:nth-child(4) {
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(9):checked ~ .tab-panels {
+                .tab-panel {
+                    &:nth-child(5) {
+                        display: block;
+                    }
+                }
+            }
+            &:nth-child(11):checked ~ .tab-panels {
+                .tab-panel {
+                    &:nth-child(6) {
+                        display: block;
+                    }
+                }
+            }
+        }
+        label {
+            position: relative;
+            display: inline-block;
+            padding: 15px 32px;
+            cursor: pointer;
+            background: transparent;
+            transition: var(--transition);
+            border: 1px solid #dddddd;
+            // border-radius: 5px;
+            font: {
+                size: 18px;
+                weight: 500;
+            }
+            margin: {
+                right: 10px;
+                bottom: 0;
+            }
+        }
+        input:checked + label {
+            // border-color: var(--mainColor);
+            // background: var(--mainColor);
+            background-color: #dddddd;
+            color: gray;
+        }
+    }
+    .tab-panel {
+        margin-top:0px;
+    }
+}
+.why-we-different-content {
+    padding-left: 10px;
+
+    h3 {
+        margin-bottom: 15px;
+        font: {
+            size: 25px;
+            weight: 500;
+        }
+    }
+    ul {
+        margin: {
+            top: 20px;
+            bottom: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            font-weight: 300;
+            color: #000;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            i {
+                color: var(--mainColor);
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.why-we-different-img {
+    text-align: center;
+}
+
+
+@media (min-width:1024px) and (max-width:1440px){
+    .contact-btn{
+        font-size: 12px;
+    }
+    .get-phone-number-btn{
+        font-size: 12px;
+    }
+    .cart-price {
+        p:nth-child(2){
+            font-size: 13px;
+        }
+    }
+}
+
+
+
+
+
+@media (min-width:1024px) and (max-width:1440px){
+    .openlands-banner{
+        height: 45vh;
+    }
+    .form-select{
+        font-size: 13px;
+    }
+    .tabset {
+    margin-left: 15px;
+    }
+        .tablist a{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .col-8 .row a{
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+    .col-8 .row div{
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    .mb-1{
+        margin-bottom: 0 !important;
+    }
+    .wts-up-btn{
+        font-size: 12px;
+        padding: 3px 10px;
+        svg{
+            width: 20px;
+        }
+    }
+    .enqurie-btn{
+        font-size: 12px;
+        padding: 3px 10px;
+        svg{
+            width: 20px;
+            margin-right: 2px;
+        }
+    }
+    .why-we-different-tabset.tabset  label{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .m-0{
+        font-size: 12px;
+    }
+    div.p-3{
+        padding: 15px 5px  !important;
+    }
+}    
+
+@media (min-width:1200px) and (max-width:1399px){
+    .col-8 .row a{
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+    .col-8 .row div{
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+}
+@media (min-width:1400px) and (max-width:1500px){
+    .col-8 .row a{
+        font-size: 14px;
+        padding-bottom: 13px;
+    }
+    .col-8 .row div{
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+}
+@media (min-width:320px) and (max-width:660px){
+  
+    .openlands-banner {
+      height: 25vh;
+    }
+    .col-4 img{
+        height: 20vh;
+        // width: 80vh !important;
+        width: 100%;
+    }
+    .cart{
+        padding: 0;
+        .cart1{
+            flex-direction: column;
+            .cartimg{
+                width: 100%;
+                padding: 10px !important;
+            }
+           .cart-details{
+            width: 100%;
+            .row{
+                .col-8{
+                    padding: 0 10px;
+                }
+                .col-4{
+                    padding-right: 2px !important;
+                }
+                a{
+                    font-size: 9px;
+                }
+                div{
+                    font-size: 9px;
+                }
+            }
+           }
+        }
+    }
+    .col-8 .row a{
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+    .col-8 .row div{
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    .mb-1{
+        margin-bottom: 0 !important;
+    }
+    .wts-up-btn{
+        font-size: 10px;
+        padding: 2px 5px;
+        svg{
+            width: 15px;
+        }
+    }
+    .enqurie-btn{
+        font-size: 10px;
+        padding: 2px 4px;
+        svg{
+            width: 15px;
+            margin-right: 2px;
+        }
+    }
+    .why-we-different-tabset.tabset  label{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .m-0{
+        font-size: 9px;
+        line-height: 12px;
+        padding: 5px 0;
+    }
+    .btn-primary{
+        font-size: 9px;}
+  }
+  @media (min-width:661px) and (max-width:1020px){
+    .btn-primary{
+        font-size: 12PX;
+    }
+    .openlands-banner {
+      height: 30vh;
+    }
+    .search-box{
+        .card{
+            padding: 0 !important;
+        }
+        .card-body {
+            padding: 0 !important;
+        }
+       
+    }
+    .col-4 {
+        padding-right: 0;
+    }
+    .col-8 .row a{
+        font-size: 10px;
+        padding-bottom: 4px;
+    }
+    .col-8 .row div{
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .mb-1{
+        margin-bottom: 0 !important;
+    }
+    .wts-up-btn{
+        font-size: 10px;
+        padding: 3px 8px;
+        svg{
+            width: 20px;
+        }
+    }
+    .enqurie-btn{
+        font-size: 10px;
+        padding: 3px 8px;
+        svg{
+            width: 20px;
+            margin-right: 2px;
+        }
+    }
+    .why-we-different-tabset.tabset  label{
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+    .m-0{
+        font-size: 10px;
+    }
+    div.p-3{
+        padding: 10px 0px 10px 0px !important;
+    }
+  }

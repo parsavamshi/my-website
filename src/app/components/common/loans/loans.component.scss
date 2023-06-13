@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    color: deepskyblue;
+    // border-bottom: 2px solid #fff;
+    text-decoration: underline;
+    // background-color: #0071BC;
+}
+
+.loans{
+    background-image: url(https://www.piramalfinance.com/blog/images/blog/complete-guide-to-real-estate-financing-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loans-item{
+    height: 900px;
+    width: 100%;
+}
+
+@media (min-width:320px) and (max-width:780px){
+    
+.loans{
+    background-size: cover;
+}
+.loans-item{
+    height: 100%;
+    width: 100%;
+}
+}
+
+@media (min-width:600px) and (max-width:900px){
+    .loans-item{
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media (min-width:901px) and (max-width:1040px){
+    .loans-item{
+        height: 700px;
+        width: 100%;
+    }
+}
+
+
+@media (min-width:1024px) and (max-width:1440px){
+    .loans-item{
+        height: 620px;
+        width: 100%;
+       
+    }
+    h1{
+        font-size: 50px;
+        margin-top: 10%;
+    }
+}
